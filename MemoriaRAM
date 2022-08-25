@@ -1,0 +1,34 @@
+
+public class MemoriaRAM {
+	
+	private String marcaram;
+	private Integer tamanho;
+	
+	public MemoriaRAM () {
+		this.marcaram = "";
+		this.tamanho = 0;
+	}
+	
+	public MemoriaRAM (String marcaram, Integer tamanho) {
+		this.marcaram = marcaram;
+		this.tamanho = tamanho;
+	}
+	
+	public String getMarcaram() {
+		 return marcaram;
+	 }
+	 
+	 public void setMarcaram (String marcaram) {
+		 this.marcaram = marcaram;
+	 }
+	 
+	 public Integer getTamanho() {
+		 return tamanho;
+	 }
+	 
+	 public void setTamanho(Integer tamanho) {
+		 this.tamanho = tamanho;
+	 }
+
+}
+
