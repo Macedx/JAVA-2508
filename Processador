@@ -1,0 +1,32 @@
+public class Processador {
+
+	private String marcapro;
+	private Integer velocidade;
+	
+	public Processador () {
+		this.marcapro = "";
+		this.velocidade = 0;
+	}
+	
+	public Processador(String marcapro, Integer velocidade) {
+		this.marcapro = marcapro;
+		this.velocidade = velocidade;
+	}
+	
+	public String getMarcapro() {
+		 return marcapro;
+	 }
+	 
+	 public void setMarca (String marcapro) {
+		 this.marcapro = marcapro;
+	 }
+	 
+	 public Integer getVelocidade() {
+		 return velocidade;
+	 }
+	 
+	 public void setVelocidade(Integer velocidade) {
+		 this.velocidade = velocidade;
+	 }
+
+}
