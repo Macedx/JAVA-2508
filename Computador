@@ -1,0 +1,45 @@
+
+public class Computador {
+
+	
+	private String marca;
+	private MemoriaRAM memoriaRAM;
+	private Processador processador;
+	
+	public Computador () {
+		this.marca = marca;
+		this.memoriaRAM = new MemoriaRAM();
+		this.processador = new Processador();
+	}
+	
+	public Computador (String marca, String marcapro, Integer tamanho, String marcaram, Integer velocidade ) {
+		this.marca = marca;
+		this.memoriaRAM = new MemoriaRAM(marcaram, tamanho);
+		this.processador = new Processador(marcapro, velocidade);
+	}
+	
+	public String getMarca() {
+		 return marca;
+	 }
+	 
+	 public void setMarca (String marca) {
+		 this.marca = marca;
+	 }
+	 
+	 public MemoriaRAM getMemoriaRAM() {
+		 return memoriaRAM;
+	 }
+	 
+	 public void setMemoriaRAM(MemoriaRAM memoriaRAM) {
+		 this.memoriaRAM = memoriaRAM;
+	 }
+	 
+	 public Processador getProcessador() {
+		 return processador;
+	 }
+	 
+	 public void setProcessador(Processador processador) {
+		 this.processador = processador;
+	 }
+	 
+}
