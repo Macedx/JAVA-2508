@@ -1,0 +1,31 @@
+public class Motor {
+
+	 private String combustivel;
+	 private Integer potencia;
+	 
+	 public Motor () {
+		 this.combustivel = "";
+		 this.potencia = 0;
+	 }
+	 
+	 public Motor (String combustivel, Integer potencia) {
+		 this.combustivel = combustivel;
+		 this.potencia = potencia;
+	 }
+	 
+	 public String getCombustivel() {
+		 return combustivel;
+	 }
+	 
+	 public void setCombustivel(String combustivel) {
+		 this.combustivel = combustivel;
+	 }
+	 
+	 public Integer getPotencia() {
+		 return potencia;
+	 }
+	 
+	 public void setPotencia(Integer potencia) {
+		 this.potencia = potencia;
+	 }
+}
