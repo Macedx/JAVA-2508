@@ -1,0 +1,34 @@
+import java.time.LocalDate;
+
+public class Identidade {
+
+	private String numero;
+	private LocalDate dataemissao;
+	
+	public Identidade ( ){
+		this.numero = "";
+		this.dataemissao = LocalDate.now();
+	}
+	
+	public Identidade(String numero, Integer dia2, Integer mes2, Integer ano2) {
+		this.numero = numero;
+		this.dataemissao = LocalDate.of(ano2, mes2, dia2);
+	}
+	
+	public String getNumero () {
+		return numero;	
+	}
+	
+	public void setNumero (String numero) {
+		this.numero = numero;
+	}
+	
+	public LocalDate getDataemissao () {
+		return dataemissao;
+	}
+	
+	public void setDataemissao (LocalDate dataemissao) {
+		this.dataemissao = dataemissao;
+	}
+	
+}
