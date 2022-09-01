@@ -1,0 +1,42 @@
+public class Mobile {
+
+	private String modelo;
+	private String marca;
+	private CartaoSIM cartaoSIM;
+	
+	public Mobile (){
+		this.modelo = "";
+		this.marca = "";
+		this.cartaoSIM = new CartaoSIM();
+	}
+	
+	public Mobile (String modelo, String marca, CartaoSIM cartaoSIM) {
+		this.modelo = modelo;
+		this.marca = marca;
+		this.cartaoSIM = new CartaoSIM (operadora, tamanho, numero);
+	}
+	
+	public String getModelo () {
+		return modelo;
+	}
+	
+	public void setModelo (String modelo) {
+		this.modelo = modelo;
+	}
+	
+	public String getMarca () {
+		return marca = marca;
+	}
+	
+	public void setMarca (String marca) {
+		this.marca = marca;
+	}
+	
+	public CartaoSIM cartaoSIM () {
+		return cartaoSIM = cartaoSIM;
+	}
+	
+	public void setCartaoSIM (CartaoSIM cartaoSIM) {
+		this.cartaoSIM = cartaoSIM;
+	}
+}
