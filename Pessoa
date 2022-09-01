@@ -1,0 +1,37 @@
+import java.time.LocalDate;
+
+public class Pessoa {
+	
+	private String nome;
+	private LocalDate datanascimento;
+	private Identidade rg;
+
+	
+	public Pessoa () {
+		this.nome = "";
+		this.datanascimento = LocalDate.now();
+		this.rg = new Identidade();
+	}
+	
+	public Pessoa (String nome, String numero, Integer dia2, Integer mes2, Integer ano2, Integer dia, Integer mes, Integer ano ) {
+		this.nome = nome;
+		this.datanascimento = LocalDate.of(ano, mes, dia);
+		this.rg = new Identidade (numero, ano2, mes2, dia2);
+	}
+	
+	public String getNome () {
+		return nome;
+	}
+	
+	public void setNome (String nome) {
+		this.nome = nome;
+	}
+	
+	public LocalDate getDatanascimento() {
+		return datanascimento;
+	}
+	
+	public void setDatanascimento (LocalDate datanascimento) {
+		this.datanascimento = datanascimento;
+	}
+}
