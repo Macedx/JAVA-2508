@@ -1,0 +1,12 @@
+//interface serve para criar regras abstratas
+public interface Calculadora {
+
+	//dvee-se especificar o tipo de retorno, o nome e os argumentos
+	public abstract Integer somar(Integer a, Integer b);
+	public abstract Integer multiplicar(Integer a, Integer b);
+	public abstract Integer subtrair(Integer a, Integer b);
+	public abstract Double bhaskara(Integer a, Integer b, Integer c);
+	public abstract Integer potencia(Integer a, Integer b);
+	public abstract void imprimir();
+	
+}
