@@ -1,0 +1,42 @@
+//interface compare.to
+public class Aluno implements Comparable<Aluno>{
+
+	private String nome;
+	
+	public Aluno() {
+		this.nome = "";
+	}
+	public Aluno(String nome) {
+		this.nome = nome;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public int compareTo(Aluno o) {
+		return this.nome.compareTo( o.getNome() );
+	}
+		
+}
+
+___________________________________________________________________________________________________________________________________________________
+
+//teste da interface
+public class Teste2 {
+
+	public static void main(String[] args) {
+		
+		Aluno a1 = new Aluno("Ana");
+		
+		Aluno a2 = new Aluno("Bruno");
+		
+		System.out.println( a2.compareTo(a1) );
+		
+
+	}
+
+}
