@@ -1,0 +1,44 @@
+public class Soldado extends Militar { //extends para herdar
+
+	
+	//atributos
+	private String email;
+	private String telefone;
+	
+	//método construtor sem argumentos
+	public Soldado () {
+		super();
+		this.email = "";
+		this.telefone = "";
+	}
+	
+	//método construtor com argumentos
+	public Soldado (String nomeM, Integer ano, Integer mes, Integer dia, String email, String telefone ) {
+		super(nomeM, ano, mes, dia);
+		this.email = email;
+		this.telefone = telefone;
+	}
+	
+	//get/set
+		public String getEmail () {
+		return email;
+	}
+		public void setEmail (String email) {
+			this.email = email;
+	}
+		
+		public String getTelefone() {
+			return email;
+		}
+		public void setTelefone(String telefone) {
+			this.telefone = telefone;
+		}
+
+		//sobrecarga toTring sobre a classe Object
+		@Override
+		public String toString() {
+			return super.toString() + this.email + this.telefone;
+		}
+		
+		
+}
