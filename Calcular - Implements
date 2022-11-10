@@ -1,0 +1,24 @@
+//cria-se uma classe para implementar as regras da interface, apresentando sua lógica
+public class Calcular implements Calculadora{
+	
+	public Integer somar(Integer a, Integer b) {
+		return a+b;
+	}
+	public Integer multiplicar(Integer a, Integer b) {
+		return a*b;
+	}
+	public Integer subtrair (Integer a, Integer b) {
+		return a-b;
+	}
+	public Double bhaskara (Integer a, Integer b, Integer c) {
+		return (double) (b*b)- 4*a*c;
+	}
+	public Integer potencia (Integer a, Integer b) {
+		return a^b;
+	}
+	
+	public void imprimir() {
+		System.out.println("Ola bom dia");
+	}
+	
+}
