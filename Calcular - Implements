@@ -22,3 +22,17 @@ public class Calcular implements Calculadora{
 	}
 	
 }
+
+___________________________________________________________________________________________________________________________________________________________
+//teste do delta
+public class teste {
+	public static void main(String args[]) {
+		
+		Integer a, b, c, delta;
+		a = 7; b = 3; c = 4;
+		
+		delta = (b*b)- 4*a*c;
+		
+		System.out.println(delta);
+	}
+}
