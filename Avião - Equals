@@ -1,0 +1,79 @@
+//Código fonte Aviao, atributos fabricante (String), e tipo (string), 3 métodos construtores, get/set, método Equals da classe Object e toString
+
+package packageee;
+
+//Importa a classe Objects
+
+import java.util.Objects;
+
+public class Aviao {
+
+	//Declarar atributos
+	
+	private String fabricante;
+	private String tipo;
+	
+	//Método construtor sem argumentos
+	
+	public Aviao () {
+		
+		this.fabricante = " ";
+		this.tipo = " ";
+	}
+	
+	//Método construtor com argumento 2
+	
+	public Aviao (String fabricante, String tipo) {
+		
+		this.fabricante = fabricante;
+		this.tipo = tipo;
+		
+	}
+	
+	//Método construtor com argumento 3
+	
+	public Aviao (String fabricante) {
+		
+		this.fabricante = fabricante;
+		this.tipo = " ";
+	}
+
+	//Get/Set
+	public String getFabricante() {
+		return fabricante;
+	}
+
+	public void setFabricante(String fabricante) {
+		this.fabricante = fabricante;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	//Equals
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Aviao other = (Aviao) obj;
+		return Objects.equals(fabricante, other.fabricante) && Objects.equals(tipo, other.tipo);
+	}
+
+	//toString
+	@Override
+	public String toString() {
+		return "Aviao [fabricante=" + fabricante + ", tipo=" + tipo + "]";
+	}
+	
+}
