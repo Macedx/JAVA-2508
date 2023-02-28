@@ -1,0 +1,62 @@
+//Código fonte Tenis com atributos marca (string), modelo (string) e tamanho (integer), 3 métodos construtores, get/set, método Equals da classe Object e toString 
+
+package packageee;
+
+//Importa a classe Objects
+import java.util.Objects;
+
+public class Tenis {
+
+	//Declara atributos
+	private String marca;
+	private String cor;
+	private Integer tamanho;
+	
+	
+	//Método construtor sem argumentos
+	public Tenis () {
+		
+		this.marca = " ";
+		this.cor = " ";
+		this.tamanho = 0;
+	}
+	
+	//Método construtor com argumento 2
+	public Tenis (String marca, String cor, Integer tamanho) {
+		
+		this.marca = marca;
+		this.cor = cor;
+		this.tamanho = tamanho;
+	}
+	
+	//Método construtor com argumento 3
+	public Tenis (String marca) {
+		
+		this.marca = marca  ;
+		this.cor = " " ;
+		this.tamanho = 0;
+	}
+
+	//Equals
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Tenis other = (Tenis) obj;
+		return Objects.equals(cor, other.cor) && Objects.equals(marca, other.marca)
+				&& Objects.equals(tamanho, other.tamanho);
+	}
+
+	//toSTring
+	@Override
+	public String toString() {
+		return "Tenis [marca=" + marca + ", cor=" + cor + ", tamanho=" + tamanho + "]";
+	}
+	
+	
+}
