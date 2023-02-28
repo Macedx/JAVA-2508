@@ -1,0 +1,102 @@
+//Escreva o código fonte da classe Pessoa, incluir atributos nome (String), nascimento (LocalDate), 2 métodos construtores
+
+package xxx
+
+// Importação do método LocalDate
+import java.time.LocalDate;
+
+//Declarar os atributos
+	public class Pessoa {
+		
+		private String nome;
+		private LocalDate datanascimento;
+
+	// Método construtor sem argumentos
+		public Pessoa () {
+			this.nome = "";
+			this.datanascimento = LocalDate.now();
+		}
+		
+    // Método construtor com argumento
+		public Pessoa (String nome, Integer dia, Integer mes, Integer ano ) {
+			this.nome = nome;
+			this.datanascimento = LocalDate.of(ano, mes, dia);
+
+		}
+		
+    //Get/Set
+		public String getNome () {
+			return nome;
+		}
+		
+		public void setNome (String nome) {
+			this.nome = nome;
+		}
+		
+		public LocalDate getDatanascimento() {
+			return datanascimento;
+		}
+		
+		public void setDatanascimento (LocalDate datanascimento) {
+			this.datanascimento = datanascimento;
+		}
+
+//Método to string
+		@Override
+		public String toString() {
+			return "Pessoa [nome=" + nome + ", datanascimento=" + datanascimento + "]";
+		}
+	}
+
+___________________________________________________________________________________________________________________________________________________
+ Código fonte Funcionario com herança da classe Pessoa, atributos rg (String) e cpf (string), 2 métodos construtores, get/set e toString
+package xxx;
+
+// Herança, extends
+
+public class Funcionario extends Pessoa {
+
+//Declarar atributos
+	private String rg;
+	private String cpf;
+
+	// Método construtor sem argumentos
+	public Funcionario(){
+		super();
+		this.rg = "";
+		this.cpf = "";
+	}
+	
+  // Método construtor com argumento
+	public Funcionario(String nome, Integer dia, Integer mes, Integer ano, String rg, String cpf ) {
+		super(nome, dia, mes, ano);
+		this.rg = rg;
+		this.cpf = cpf;
+
+	}
+	
+  // Get/set
+  
+	public String getRg () {
+		return rg;
+	}
+	
+	public void setRg (String rg) {
+		this.rg = rg;
+	}
+	
+	public String getCpf() {
+		return cpf;
+	}
+	
+	public void setCpf (String cpf) {
+		this.cpf = cpf;
+	}
+  
+  //M
+  
+  @Override
+	public String toString() {
+		return "Funcionario [rg=" + rg + ", cpf=" + cpf + "]";
+	}
+}
