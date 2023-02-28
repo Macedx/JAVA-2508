@@ -1,0 +1,76 @@
+//Código fonte Mobile com atributos marca (string) e modelo (string), 3 métodos construtores, get/set, método Equals da classe Object e toString 
+
+package packageee;
+
+//IMporta a classe Objects
+
+import java.util.Objects;
+
+public class Mobile {
+
+	// Declarar atributos
+	private String marca;
+	private String modelo;
+	
+	//Método construtor sem argumentos
+	public Mobile () {
+		
+		this.marca = " ";
+		this.modelo = " ";
+	}
+	
+	//Método construtor com argumento 2
+	public Mobile (String marca, String modelo) {
+		
+		this.marca = marca;
+		this.modelo = modelo;
+	}
+	
+	//Método construtor com argumeto 3
+	public Mobile (String marca) {
+		
+		this.marca = marca ;
+		this.modelo = " " ;
+	}
+
+	//Get/Set
+	public String getMarca() {
+		return marca;
+	}
+
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+
+	public String getModelo() {
+		return modelo;
+	}
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+
+	//Método Equals da classe Object
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Mobile other = (Mobile) obj;
+		return Objects.equals(marca, other.marca) && Objects.equals(modelo, other.modelo);
+	}
+
+	// toSTring
+	@Override
+	public String toString() {
+		return "Mobile [marca=" + marca + ", modelo=" + modelo + "]";
+	}
+	
+	
+}
+
+//Método Equals - compara e ordena vetores
