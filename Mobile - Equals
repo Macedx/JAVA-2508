@@ -61,10 +61,16 @@ public class Mobile {
 		if (getClass() != obj.getClass())
 			return false;
 		Mobile other = (Mobile) obj;
-		return Objects.equals(marca, other.marca) && Objects.equals(modelo, other.modelo);
+		if (this.modelo == null) {
+			if (other.modelo != null)
+				return false
+		}
+		else if ( ! this.modelo.equals (other.modelo) )
+			return false
+		return true;
 	}
 
-	// toSTring
+	// toString
 	@Override
 	public String toString() {
 		return "Mobile [marca=" + marca + ", modelo=" + modelo + "]";
