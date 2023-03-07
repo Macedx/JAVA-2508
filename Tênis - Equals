@@ -40,16 +40,37 @@ public class Tenis {
 	//Equals
 
 	@Override
-	public boolean equals(Object obj) {
+	public boolean equals(Object obj) { // público do tipo booleano do Objeto chamado obj aqui
+	//comparação dele com ele mesmo
 		if (this == obj)
 			return true;
+			
+	//comparação se o argumento é nulo (se for retorna falso)
 		if (obj == null)
 			return false;
+	//comparação se tem classes diferentes (se for retorna falso)
 		if (getClass() != obj.getClass())
 			return false;
+	//conversão
 		Tenis other = (Tenis) obj;
-		return Objects.equals(cor, other.cor) && Objects.equals(marca, other.marca)
-				&& Objects.equals(tamanho, other.tamanho);
+		
+	//comparação da marca se é nulo
+		if (this.marca == null) {
+			if (other.marca != null)
+				return false;
+		}
+		else if ( ! this.marca.equals (other.marca) )
+			return false;
+			
+		if (this.cor == null) {
+			if (other.cor != null)
+				return false;
+		}
+		else if ( ! this.cor.equals (other.cor) )
+			return false;
+			
+	return true;
+			
 	}
 
 	//toSTring
