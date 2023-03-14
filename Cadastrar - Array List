@@ -1,0 +1,81 @@
+package PACOTE1;
+
+public class Aluno {
+	private String nome;
+	private Integer cod;
+	
+	public Aluno(String nome, Integer cod) {
+		this.nome = nome;
+		this.cod = cod;
+	}
+	public Aluno() {
+		this.nome = "";
+		this.cod = 0;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public Integer getCod() {
+		return cod;
+	}
+	public void setCod(Integer cod) {
+		this.cod = cod;
+	}
+	@Override
+	public String toString() {
+		return "Aluno [nome=" + nome + ", cod=" + cod + "]";
+	}
+	
+	
+	
+}
+___________________________________________________________________________________________________________________________________________________________
+package PACOTE1;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Teste {
+	private ArrayList<Aluno> lista;
+	private Scanner sc;
+	
+	public Teste() {
+		this.lista = new ArrayList<Aluno>();
+		this.sc = new Scanner(System.in);
+		Integer opcao = 0;
+		
+		
+		do {
+			System.out.println("1- cadastrar");
+			System.out.println("2- listar");
+			System.out.println("3- fim");
+			opcao = sc.nextInt();
+			
+			switch(opcao) {
+			case 1:
+				cadastrar();
+				break;
+			case 2:
+				listar();
+				break;
+			case 3:
+				fim();
+				break;
+			}
+			
+		}while(opcao < 3);
+		
+	}
+	
+	public void cadastrar() {
+		System.out.println("cadastrar");
+	}
+	public void listar() {
+		System.out.println("x");
+	}
+	public void fim() {
+		System.out.println("y");
+	}
+}
