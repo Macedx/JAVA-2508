@@ -1,0 +1,19 @@
+1 - Escreva qual a funcionalidade de 5 métodos da Interface List. Faça um programa Java que demonstre o funcionamento dos 5 métodos que foram escolhidos
+
+1° - add 
+Insere o elemento específico na posição específica;
+
+2° - iterator
+Retorna um iterador (padrão de projeto que permite que permite a passagem sequencial através de uma estrutura de dados complexa sem expor seus detalhes internos) 
+sobr eos elementos da lista em uma sequência adequada;
+
+3° - size ()
+Retorna o número de elementos da lista;
+
+4° - equals
+Compara um objeto específico para se igualar;
+
+5° - HashCode
+Retorna o valor do código Hash para esta lista.
+
+______________________________________________________________________________________________________________________________________________________________________________
