@@ -1,0 +1,18 @@
+2 - Escreva qual a funcionalidade de 5 métodos da Interface Set. Faça um programa Java que demonstre o funcionamento dos 5 métodos que foram escolhidos.
+
+1° - add
+Adiciona elemento específico ao conjunto se ainda não estiver presente;
+
+2° - clear ()
+Remove todos os elementos desse conjunto;
+
+3° - Contain (Object)
+Retorna verdadeiro se este conjunto possuir o elemnto especificado;
+
+4° - HashCode
+Retorna o valor do código hash para este conjunto;
+
+5° - IsEmpty()
+REtorna verdadeiro s eeste conjunto não possui elementos.
+
+___________________________________________________________________________________________________________________________________________________________
