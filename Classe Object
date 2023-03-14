@@ -1,0 +1,9 @@
+3 - Escreva qual é a funcionalidade da classe Objects. Em qual versão da linguagem Java foi incluída a classe Objects. 
+Faça um programa Java que demonstre o funcionamento da classe Objects.
+
+Objects
+
+  A classe Object é a raiz d ahierarquia em Java, ou, uma superclasse de todas as classes.
+  Sendo Object a base, a partir dela que se torna possível definir comportamentos comuns que todo objeto deve ter, 
+  por exemplo: capacidade de ser comparado, de ser representado como texto, e de possuir um número de identificação de suas posições em coleções,
+  baseadas em hash.
