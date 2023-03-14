@@ -79,3 +79,14 @@ public class Teste {
 		System.out.println("y");
 	}
 }
+____________________________________________________________________________________________________________________________________________________________
+package PACOTE1;
+
+public class Main {
+	public static void main(String[] args ) {
+		
+		Teste A1 = new Teste();
+		
+		
+	}
+}
