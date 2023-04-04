@@ -1,0 +1,18 @@
+HashSet - não repete elementos
+
+RetainAll - O que contém em nas (duas ou mais) listas
+
+HashCode - número que representa os objetos
+No caso dos inteiros o HashCode é o próprio número inteiro
+
+HashCode de letras - Tabela ASCII
+
+Collections - Classe utilitária de manipulação de vetores
+
+Sort - Ordena de forma crescente
+
+ReverseOrder - Ordena de forma decrescente
+
+LastIndexOf = Última aparição (indexação)
+
+
