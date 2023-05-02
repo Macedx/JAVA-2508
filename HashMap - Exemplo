@@ -1,0 +1,21 @@
+
+package AULA02;
+import java.util.HashMap;
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		//HashMap - faz buscas e inserções
+		//<tipo de chave, tipo de valor>
+		HashMap <String, Integer> mapa = new HashMap <String, Integer>();
+		
+		//coloca chaves e valores no mapa
+		mapa.put("Bernardo", 50);
+		mapa.put("Marcia", 40);
+		mapa.put("Gabriel Medina", 28);
+		
+		//for para imprimir o valor e a idade
+		for (String m: mapa.keySet())
+			System.out.println (m + " - " + mapa.get(m));
+	}
+}
