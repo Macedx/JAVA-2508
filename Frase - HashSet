@@ -1,0 +1,32 @@
+aça um programa que leia uma frase e informe o número de palavras não repetidas da frase,
+utilize uma coleção HashSet.
+
+package AULA02;
+
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class Frase {
+
+	public static void main (String args []) {
+
+		Scanner sc = new Scanner (System.in); //scanner para ler
+
+		HashSet <String> mapa = new HashSet <String>(); // hashSet não permite palavras repetidas
+		
+		System.out.println( "Digite a frase: ");// Usuário digita a frase
+				
+		String frase = sc.nextLine();// frase será igual à próxima linha do scanner
+		
+		StringTokenizer x = new StringTokenizer( frase ); // Tokenizer = quebra as palavras
+		
+		while( x.hasMoreElements() ) //Enquanto x (stringTokenizer) tiver mais elementos
+			mapa.add( x.nextToken() );//Adiciona x e o próximo token no mapa
+		
+		for( String c: mapa ) //para string c = mapa
+			System.out.println( c );// Imprima c
+	
+	}
+}
+		
