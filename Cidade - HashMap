@@ -1,0 +1,47 @@
+// Escreva um programa Java com uma função principal main que execute as seguintes ações:
+//• que solicite nomes de cidades ao usuário;
+//• o programa pode cadastrar diversos nomes de cidades;
+//• criar um mapa para armazenar chaves como String e valores como Integer;
+//• armazenar no mapa o nome da cidade como chave e a quantidade de letras do nome da
+//cidade como valor;
+//• após o usuário realizar os cadastros o programa deve apresentar todas informações
+//armazenadas no mapa
+
+
+package AULA02;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Cidade {
+
+	public static void main (String args []) {
+		
+		//Scanner para ler informações
+		Scanner sc = new Scanner (System.in);
+		
+		//HashMap - faz buscas e inserções
+		//<tipo de chave, tipo de valor>
+		HashMap <String, Integer> mapa = new HashMap <String, Integer>();
+		
+		//definir atributo
+		String cidade = "";
+		
+		//imprime a solicitação da frase
+		//lê com scanner e passa para próxima linha
+		//armazena no mapa a chave e o valor
+		do {
+			System.out.println ("Digite o nome de uma cidade: ");
+			cidade = sc.nextLine();
+			mapa.put(cidade,  cidade.length());
+		}
+		
+		//enquanto cidade for diferente de branco
+		while (! cidade.isBlank());
+		
+		//imprime string m 
+		for (String m: mapa.keySet()) 
+			System.out.println (m + " - " + mapa.get(m));
+	
+	}
+}
